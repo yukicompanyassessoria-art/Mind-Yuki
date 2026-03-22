@@ -95,3 +95,26 @@ export interface Goal {
   unit: string
   traffic_light: TrafficLight
 }
+
+export type ChecklistFrequency = 'semanal' | 'mensal' | 'trimestral' | 'anual'
+
+export type ChecklistCategory =
+  | 'reuniao_clientes'
+  | 'reuniao_time'
+  | 'reuniao_novos_clientes'
+  | 'reuniao_parceiros'
+  | 'reuniao_socio'
+  | 'operacional'
+  | 'marketing'
+  | 'estrategia'
+  | 'financeiro'
+  | 'outros'
+
+export interface ChecklistItem {
+  id: string
+  title: string
+  frequency: ChecklistFrequency
+  category: ChecklistCategory
+  order: number
+  created_at: string
+}

@@ -13,6 +13,7 @@ import {
   TrendingUp,
   LogOut,
   Zap,
+  CheckSquare,
 } from 'lucide-react'
 import { Avatar } from './ui/avatar'
 
@@ -22,6 +23,7 @@ const NAV_ITEMS = [
   { href: '/metas', label: 'Metas', icon: TrendingUp },
   { href: '/bsc', label: 'BSC por Área', icon: BarChart3 },
   { href: '/rituais', label: 'Rituais', icon: Calendar },
+  { href: '/checklist', label: 'Meu Checklist', icon: CheckSquare },
   { href: '/time', label: 'Time', icon: Users },
 ]
 
