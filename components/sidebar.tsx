@@ -14,17 +14,21 @@ import {
   LogOut,
   Zap,
   CheckSquare,
+  CalendarDays,
+  Link2,
 } from 'lucide-react'
 import { Avatar } from './ui/avatar'
 
 const NAV_ITEMS = [
   { href: '/', label: 'Dashboard', icon: LayoutDashboard },
+  { href: '/agenda', label: 'Minha Semana', icon: CalendarDays },
+  { href: '/checklist', label: 'Meu Checklist', icon: CheckSquare },
   { href: '/ncts', label: 'NCTs & Entregas', icon: Target },
   { href: '/metas', label: 'Metas', icon: TrendingUp },
   { href: '/bsc', label: 'BSC por Área', icon: BarChart3 },
   { href: '/rituais', label: 'Rituais', icon: Calendar },
-  { href: '/checklist', label: 'Meu Checklist', icon: CheckSquare },
   { href: '/time', label: 'Time', icon: Users },
+  { href: '/integracoes', label: 'Integrações', icon: Link2 },
 ]
 
 export function Sidebar() {
